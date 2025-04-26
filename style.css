@@ -1,0 +1,9 @@
+.container {
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar-dark {
+  --bs-bg-opacity: 1;
+  background-color: #000 !important;
+}
+
