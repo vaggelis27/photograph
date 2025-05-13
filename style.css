@@ -1,9 +1,142 @@
+/* 1) Poppins font */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
 .container {
   font-family: "Poppins", sans-serif;
 }
 
+@media (min-width: 768px) {
+  img.responsive {
+    width: 50%;
+  }
+}
+
+/* start navbar */
+
+/*  Offset for fixed navbar */
+body {
+  padding-top: 70px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  margin: 25px;
+}
+
+/*  Dark background navbar */
 .navbar-dark {
   --bs-bg-opacity: 1;
   background-color: #000 !important;
 }
 
+/* End navbar */
+
+/* start Gallery */
+.slideshow-container {
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Slide */
+.mySlides {
+  display: none;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Slide Image */
+.mySlides img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Number Text */
+.number-text {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 14px;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 8px;
+  border-radius: 3px;
+}
+
+/* Caption */
+.caption-container {
+  text-align: center;
+  background: #222;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 16px;
+}
+
+/* Navigation Buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  font-weight: bold;
+  font-size: 24px;
+  color: #fff;
+  border-radius: 3px;
+  user-select: none;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.prev {
+  left: 8px;
+}
+
+.next {
+  right: 8px;
+}
+
+.prev:hover,
+.next:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/* Thumbnail Row */
+.row {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+/* Thumbnail Column */
+.column {
+  flex: 0 0 16.66%;
+  padding: 4px;
+}
+
+/* Thumbnail */
+.demo {
+  width: 100%;
+  height: 80px;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+
+.demo img:hover,
+.active {
+  opacity: 1;
+  border: 2px solid #333;
+}
+
+/* End Gallery */
+
+.mySlides img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: top;  
+  object-position: center;
+}
